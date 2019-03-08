@@ -21,9 +21,7 @@ func main() {
 	var balance float64
 
 	for balance <= 20 {
-		coin := coins[rand.Intn(3)]
-		balance += coin
-
+		balance += coins[rand.Intn(3)]
 		fmt.Printf("Balance is now $%4.2f\n", balance)
 	}
 }
