@@ -6,18 +6,10 @@ import (
 	"time"
 )
 
-func init() {
-	rand.Seed(time.Now().UnixNano())
-}
-
 func main() {
-	const (
-		nickel  = 0.05
-		dime    = 0.10
-		quarter = 0.25
-	)
+	rand.Seed(time.Now().UnixNano())
 
-	var coins = [3]float64{nickel, dime, quarter}
+	var coins = [3]float64{.05, .10, .25}
 	var balance float64
 
 	for balance <= 20 {
