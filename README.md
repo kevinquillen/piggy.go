@@ -1,0 +1,1 @@
+This lesson was to create an app that adds a random coin to a piggy bank until it has at least $20.00 balance in it. It should also print the new balance each time.
