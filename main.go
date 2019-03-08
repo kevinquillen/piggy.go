@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"math"
 	"math/rand"
 	"time"
 )
@@ -25,6 +24,6 @@ func main() {
 		coin := coins[rand.Intn(3)]
 		balance += coin
 
-		fmt.Printf("Balance is now $%4.2f\n", math.Abs(balance))
+		fmt.Printf("Balance is now $%4.2f\n", balance)
 	}
 }
